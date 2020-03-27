@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>223grp</title>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+
+
+
+//(19 задача)
+let str = 'a1b c34d x567z';
+let arr = str.match(/(\d)/g);
+let sum = 0;
+	for (let digital of arr)
+{sum += +digital; }
+
+
+
+//(20 задача)
+let str1 = '31.12.2025';
+let res = str1.match(/\d+/g );
+console.log(res[0]); 
+console.log(res[1]); 
+console.log(res[2]); 
+
+
+
+//(21 задача)
+let str2 = '12 34 56 78';
+let result = str2.replace(/(\d+)/g, function (match) {
+return match.split('').reverse().join('');  });
+console.log(result);
+</script>
+</body>
+</html>
