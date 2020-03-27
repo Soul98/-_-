@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>223grp</title>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+//(22 задача)
+let str = 'sss site.ru zzz site.com kkk';
+console.log(str);
+let newstr = str.replace(/([a-z]+\.+[a-z]{2,3})/gm, '<a href = "http://$1">$1</a>'); 
+console.log(newstr);
+
+
+
+//(25 задача)
+let str1 = '<a href="" class="eee" id="zzz">';
+let att = str1.match(/\w+?(?==)/g);
+console.log(att);
+
+
+
+//(26 задача)
+let str2 = 'aaa [2] bbb [3] ccc [12] ddd';
+let result = str2.replace(/\[(\d+)\]/g, function(match, value)
+{	return "[" + (value * 2) + "]";});
+console.log(result);
+</script>
+</body>
+</html>
